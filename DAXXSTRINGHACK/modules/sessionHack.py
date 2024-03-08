@@ -25,7 +25,7 @@ from telethon.sessions import StringSession
 @app.on_callback_query(filters.regex("A"))
 async def a_callback(client : Client , query : CallbackQuery):
     chat_id = query.message.chat.id
-    session = await client.ask(chat_id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑")    
+    session = await client.ask(chat_id,"𝗡𝗼𝘄 𝗚𝗶𝘃𝗲 𝗠𝗲 𝗧𝗵𝗲 𝗦𝘁𝗿𝗶𝗻𝗴 𝗦𝗲𝘀𝘀𝗶𝗼𝗻")    
     ch = await users_gc(session.text)
     if len(ch) > 3855:
         file = open("session.txt", "w")
@@ -42,7 +42,7 @@ async def a_callback(client : Client , query : CallbackQuery):
 @app.on_callback_query(filters.regex("B"))
 async def b_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
-    session = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑.")
+    session = await client.ask(id,"𝗡𝗼𝘄 𝗚𝗶𝘃𝗲 𝗠𝗲 𝗧𝗵𝗲 𝗦𝘁𝗿𝗶𝗻𝗴 𝗦𝗲𝘀𝘀𝗶𝗼𝗻")
     info = await user_info(session.text)
     await query.message.reply_text(text = info + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
             reply_markup=HACK_MODS,
@@ -51,7 +51,7 @@ async def b_callback(client : Client, query : CallbackQuery):
 @app.on_callback_query(filters.regex("C"))
 async def c_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
-    session = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑.")
+    session = await client.ask(id,"𝗡𝗼𝘄 𝗚𝗶𝘃𝗲 𝗠𝗲 𝗧𝗵𝗲 𝗦𝘁𝗿𝗶𝗻𝗴 𝗦𝗲𝘀𝘀𝗶𝗼𝗻")
     gc = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏/𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐈𝐃 𝐎𝐑 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄") 
     hehe = await banall(session.text,gc)
     await query.message.reply_text(text = hehe + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
@@ -61,7 +61,7 @@ async def c_callback(client : Client, query : CallbackQuery):
 @app.on_callback_query(filters.regex("D"))
 async def d_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
-    session = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑.")
+    session = await client.ask(id,"𝗡𝗼𝘄 𝗚𝗶𝘃𝗲 𝗠𝗲 𝗧𝗵𝗲 𝗦𝘁𝗿𝗶𝗻𝗴 𝗦𝗲𝘀𝘀𝗶𝗼𝗻")
     hehe = await get_otp(session.text)
     await query.message.reply_text(text = hehe + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
             reply_markup=HACK_MODS,
@@ -70,7 +70,7 @@ async def d_callback(client : Client, query : CallbackQuery):
 @app.on_callback_query(filters.regex("E"))
 async def e_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
-    session = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑.")
+    session = await client.ask(id,"𝗡𝗼𝘄 𝗚𝗶𝘃𝗲 𝗠𝗲 𝗧𝗵𝗲 𝗦𝘁𝗿𝗶𝗻𝗴 𝗦𝗲𝘀𝘀𝗶𝗼𝗻")
     gc = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏/𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐈𝐃 𝐎𝐑 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄") 
     hehe = await join_ch(session.text,gc)
     await query.message.reply_text(text = hehe + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
@@ -80,7 +80,7 @@ async def e_callback(client : Client, query : CallbackQuery):
 @app.on_callback_query(filters.regex("F"))
 async def f_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
-    session = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑.")
+    session = await client.ask(id,"𝗡𝗼𝘄 𝗚𝗶𝘃𝗲 𝗠𝗲 𝗧𝗵𝗲 𝗦𝘁𝗿𝗶𝗻𝗴 𝗦𝗲𝘀𝘀𝗶𝗼𝗻")
     gc = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏/𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐈𝐃 𝐎𝐑 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄") 
     hehe = await leave_ch(session.text,gc)
     await query.message.reply_text(text = hehe + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
